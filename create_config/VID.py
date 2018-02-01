@@ -1,6 +1,6 @@
-a = open('VID.txt', 'r') #
+Read = open('VID.txt', 'r')
 
-for vid in a.readlines():
+for vid in Read.readlines():
     vlan = vid[8:12]   #if first row is number port
 #    vlan = vid[1:8]   #if second row is VLANID
     VID = vlan.strip()
